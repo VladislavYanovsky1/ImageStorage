@@ -11,27 +11,28 @@ class FirstViewController: UIViewController {
     @IBOutlet weak var imageCollection: UICollectionView!
     
 
-//    var model: CustomImageModel? = CustomImageModel(isLoggedUser: true)//  CustomImageModel(isLoggedUser: false) // dependency injection  найти и сохранить хорошую инфу а то вечно забываю и на слове божьем работает
+    //MARK: Variables
+    
     var model: CustomImageModel?
     var currentSelectedImageIndex = -1
-    //MARK: Variables
+   
    
     
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         navigationController?.navigationBar.isHidden = true
         imageCollection.register(cellType: CustomCollectionViewCell.self)
-        imageCollection.register(cellType: PlusCollectionViewCell.self) // self тк передаю сам класс
+        imageCollection.register(cellType: PlusCollectionViewCell.self)
         imageCollection.delegate = self
         imageCollection.dataSource = self
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super .viewDidAppear(animated)
-//        let indexPath = IndexPath(row: currentSelectedImageIndex, section: 0)
-//        imageCollection.deleteItems(at: [indexPath])
+
         imageCollection.reloadData()
     }
     
@@ -41,7 +42,6 @@ class FirstViewController: UIViewController {
     //MARK: IBActions
 
     @IBAction func addImageButtonPressed(_ sender: UIButton) {
-//        performImagePicker()
         imageCollection.reloadData()
     }
 
@@ -63,17 +63,17 @@ extension FirstViewController: UIImagePickerControllerDelegate, UINavigationCont
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         if let pickedImage = info[.originalImage] as? UIImage {
             
-            guard let model = model else { fatalError("Model is absent!") }
+            guard let model = model else { fatalError("Model is absent") }
            
             picker.dismiss(animated: true){
-                guard let object = CustomImage(for: pickedImage) else { fatalError("Что-то не так с картинкой") }
+                guard let object = CustomImage(for: pickedImage) else { fatalError("There is something wrong with the picture") }
                 model.imagesList.append(object)
                 print("model.imagesList: \(model.imagesList.count)")
                 
                 let indexPath = IndexPath(row: model.imagesList.count, section: 0)
                 print("try 2 reload \(indexPath), ")
                 self.imageCollection.reloadData()
-                //                self.imageCollection.insertItems(at: [indexPath])
+               
             }
         }
     }
@@ -81,7 +81,7 @@ extension FirstViewController: UIImagePickerControllerDelegate, UINavigationCont
 
 extension FirstViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        guard let model = model else { fatalError("Model is absent!") }
+        guard let model = model else { fatalError("Model is absent") }
         print(#function, model.imagesList.count)
         model.imagesList.map({print($0?.key)})
         return model.imagesList.count + 1
@@ -91,7 +91,6 @@ extension FirstViewController: UICollectionViewDelegate, UICollectionViewDataSou
         if indexPath.row == 0 {
             performImagePicker()
         } else {
-            print("test")
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             let selectedPhotoViewController = storyboard.instantiateViewController(identifier: String(describing: SelectedPhotoViewController.self)) as SelectedPhotoViewController
             selectedPhotoViewController.modalPresentationStyle = .fullScreen
@@ -107,7 +106,7 @@ extension FirstViewController: UICollectionViewDelegate, UICollectionViewDataSou
         
         guard let model = self.model else {
             return UICollectionViewCell()
-        } // проверка что модель загрузилась кооректо и не было краша
+        }
         
         if indexPath.row == 0 {
             guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier:  PlusCollectionViewCell.cellIdentifier, for: indexPath) as? PlusCollectionViewCell  else { return UICollectionViewCell() }
@@ -115,8 +114,8 @@ extension FirstViewController: UICollectionViewDelegate, UICollectionViewDataSou
         } else {
             // Создать ячейку
             guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier:  CustomCollectionViewCell.cellIdentifier, for: indexPath) as? CustomCollectionViewCell else { return UICollectionViewCell() }
-            print("ячейка для картинки", model.imagesList[indexPath.row - 1]?.key)
-            // Вызвать метод для конфигурации ячейки
+            print("cell for picture", model.imagesList[indexPath.row - 1]?.key)
+           
             cell.configure(with: CustomCollectionViewCellObject(object: model.imagesList[indexPath.row - 1]!, delegate: self))
             cell.image.contentMode = .scaleAspectFill
             return cell
@@ -124,7 +123,7 @@ extension FirstViewController: UICollectionViewDelegate, UICollectionViewDataSou
     }
 }
 
-// Устанавливаем размеры картинок
+
 extension FirstViewController: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
@@ -138,26 +137,19 @@ extension FirstViewController: UICollectionViewDelegateFlowLayout {
 extension FirstViewController: CustomCollectionViewCellDelegate {
 }
 
-//MARK: - Наваяем расширения для ячеек коллекции, чтобы потом меньше писанины было
 extension UICollectionViewCell {
-    
-    /// Чтобы не нужно было в дизайнере указывать reuseIdentifier, создадим переменную, которая будет за это отвечать
-    /// reuseIdentifier = наименование класса ячейки
+
     static var cellIdentifier: String { return String(describing: self) }
-    
-    /// Метод для конфигурации ячейки
-    /// Универсальный метод. Для любого типа кастомной и не очень ячейки -
-    /// Передаём любой объект, а внутри кастим к тому, который нам нужен.
+
     @objc func configure (with object: Any) {
-        // расширили функциональость класса UICollectionViewCell   каждая ячейка поддерживает этот метод  но реализует по свойму и потому надо его ovverride  в класса где создаю ячейку 
+  
     }
 }
 
 extension UICollectionView {
     func register<T: UICollectionViewCell>(cellType: T.Type){
-        // Создать/вызвать ниб для кастомной ячейки - НАЗВАНИЕ НИБА СОВАДАТЬ ДОЛЖНО С НАЗВАНИЕМ КЛАССА ЯЧЕЙКИ (прост для удобства)
         let nib = UINib(nibName: cellType.cellIdentifier, bundle: nil)
-        // 2. Зарегать ячейку для коллекции
+ 
         register(nib, forCellWithReuseIdentifier: cellType.cellIdentifier)
     }
 }

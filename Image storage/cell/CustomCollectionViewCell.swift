@@ -21,7 +21,7 @@ class CustomCollectionViewCell: UICollectionViewCell {
     private var imageID: String?
 
     override func configure(with object: Any) {
-        guard let data = object as? CustomCollectionViewCellObject else { fatalError("Not correct object") }
+        guard let data = object as? CustomCollectionViewCellObject else { fatalError("Invalid object") }
             self.imageID = data.object.imageURL
             self.image.image = data.object.image()
     }

@@ -1,0 +1,1083 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		52B60EC2A583F24ACBB69C113F5488B9 /* SwiftLint */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = AE7B4FB01588B9E6DF09CB79FC7CE7BD /* Build configuration list for PBXAggregateTarget "SwiftLint" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = SwiftLint;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		099EB7983E9525BF1B0F6BF0090E918B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		0C33F545955D62A36FEBD9C4A483E5A9 /* Pods-Image storageTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC5E082062C475DA6F1A17A938A7B4B /* Pods-Image storageTests-dummy.m */; };
+		15343DFC190292C106CE762C4B865C45 /* Pods-Image storageTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C086C8F145FF3B176761DF84832E3D2 /* Pods-Image storageTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1C9781FADD0F91097C0A960154D6A3DE /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C4F9258B922802E1F16A76FFD51F69 /* Keychain.swift */; };
+		2A2C53BDFF3F837D6DFE0A82B54DCF91 /* KeychainBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391F147CCD2C2602DA28CDB2DD78C778 /* KeychainBridge.swift */; };
+		33DE157D8C1BA2160BBE6EA95CAA1671 /* Pods-Image storage-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DEE95DF653805065149CBE64E509735C /* Pods-Image storage-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		46C9AB24402971DE70056A5EAA804EB5 /* KeychainSerializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847223E6C8F8E84D912B1CFC3912F5BD /* KeychainSerializable.swift */; };
+		57C3E50B877140CBACDE6C8DE6A0A35F /* Pods-Image storage-Image storageUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 014584B49A4B64BB8EE005BE52081C2A /* Pods-Image storage-Image storageUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6131220A3B53DCAD2012003F06ABDD71 /* SwiftyKeychainKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C552CE87592FEF289D7AD8D2856A3DBA /* SwiftyKeychainKit-dummy.m */; };
+		6DB0152ECB4A1A5118447FD28ADF94F8 /* SwiftyKeychainKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6308416DA0A2DCF7A2AA6597429278A0 /* SwiftyKeychainKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6E96B8C2DC5A508E4768961C710C020E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		760E63688ACF275033EBF5B956341A79 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		A07E6355AE8099D68FCCE096B35F0EDC /* KeychainError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3065FC88E08779CA1FCC0EDA925E10E9 /* KeychainError.swift */; };
+		DBA133F7126C3101C63A72B36F4B1E40 /* Pods-Image storage-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FFF1573C989C5B3A7775A149B23AA47B /* Pods-Image storage-dummy.m */; };
+		E3305A86E82AF87C67EE31A218D85E83 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		F038D999AF7D212C9FDFE0776EA7963A /* Pods-Image storage-Image storageUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BA7E5114195CEFFBB5FB64F66DBC9F9F /* Pods-Image storage-Image storageUITests-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		291F8C081B64F32F15CED08931B8D0AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B9DFE73C3E0DB9CB93C095904997F37A;
+			remoteInfo = SwiftyKeychainKit;
+		};
+		938C4EE99A2508213F0415FFFFB02FB9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52B60EC2A583F24ACBB69C113F5488B9;
+			remoteInfo = SwiftLint;
+		};
+		C2BCBAB57058E2089C6F3979D186312A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 805938B152BDD72CA7E7202B6FF39B18;
+			remoteInfo = "Pods-Image storage";
+		};
+		EDBFCD756BE51E7BC3A5702E9C6BFECE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52B60EC2A583F24ACBB69C113F5488B9;
+			remoteInfo = SwiftLint;
+		};
+		F702FA746DD0B5AC4AC7EC5219C9D6CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B9DFE73C3E0DB9CB93C095904997F37A;
+			remoteInfo = SwiftyKeychainKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		014584B49A4B64BB8EE005BE52081C2A /* Pods-Image storage-Image storageUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Image storage-Image storageUITests-umbrella.h"; sourceTree = "<group>"; };
+		0859D659507F51E0F15ACC50A79A538B /* Pods-Image storage-Image storageUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Image storage-Image storageUITests-frameworks.sh"; sourceTree = "<group>"; };
+		0B71424F75BA93CF407D54D863C84151 /* Pods-Image storage-Image storageUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Image storage-Image storageUITests-Info.plist"; sourceTree = "<group>"; };
+		0C086C8F145FF3B176761DF84832E3D2 /* Pods-Image storageTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Image storageTests-umbrella.h"; sourceTree = "<group>"; };
+		1C413A4DD3E84D05EC7E389B7A6BCE44 /* Pods-Image storage-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Image storage-Info.plist"; sourceTree = "<group>"; };
+		220C27A7A1E2D8329B4DA5973B371A37 /* Pods-Image storageTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Image storageTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		24C4F9258B922802E1F16A76FFD51F69 /* Keychain.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Keychain.swift; path = Sources/Keychain.swift; sourceTree = "<group>"; };
+		258C70C973F31097468E616D018311FC /* SwiftyKeychainKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyKeychainKit.framework; path = SwiftyKeychainKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		28DF595E677F68B5D8FBB30574776D41 /* SwiftyKeychainKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyKeychainKit-prefix.pch"; sourceTree = "<group>"; };
+		3065FC88E08779CA1FCC0EDA925E10E9 /* KeychainError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeychainError.swift; path = Sources/KeychainError.swift; sourceTree = "<group>"; };
+		3504FAD165E53B54C7ACBFFFDFCF19E2 /* Pods-Image storage-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Image storage-acknowledgements.plist"; sourceTree = "<group>"; };
+		391F147CCD2C2602DA28CDB2DD78C778 /* KeychainBridge.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeychainBridge.swift; path = Sources/KeychainBridge.swift; sourceTree = "<group>"; };
+		39270D69B74B7C044931951815F734FE /* Pods_Image_storage_Image_storageUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Image_storage_Image_storageUITests.framework; path = "Pods-Image storage-Image storageUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A3834F76369827FFE6153E1A5443358 /* Pods-Image storageTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Image storageTests-Info.plist"; sourceTree = "<group>"; };
+		3D43DAC948A0F2C7578D8CFE55D75CD8 /* SwiftLint.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftLint.release.xcconfig; sourceTree = "<group>"; };
+		45D3AAF9EC5F616C69C495C67ABC3F53 /* Pods-Image storageTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Image storageTests.release.xcconfig"; sourceTree = "<group>"; };
+		553DD37B101959E982D9C8873D444F87 /* SwiftyKeychainKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyKeychainKit.debug.xcconfig; sourceTree = "<group>"; };
+		597FC713347C17BE5AE099A867A8486C /* SwiftyKeychainKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SwiftyKeychainKit-Info.plist"; sourceTree = "<group>"; };
+		5E6561BBFF76AFD3E0B9CAE568EBA579 /* Pods_Image_storageTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Image_storageTests.framework; path = "Pods-Image storageTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6308416DA0A2DCF7A2AA6597429278A0 /* SwiftyKeychainKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyKeychainKit-umbrella.h"; sourceTree = "<group>"; };
+		6571742FDF49427500FB64B023A954FD /* Pods-Image storage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Image storage.release.xcconfig"; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		7C493125DDB684F15C8599D39B9A83E7 /* Pods-Image storage-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Image storage-acknowledgements.markdown"; sourceTree = "<group>"; };
+		7F279C5128713DB305CB034A44D65480 /* Pods-Image storageTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Image storageTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		847223E6C8F8E84D912B1CFC3912F5BD /* KeychainSerializable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeychainSerializable.swift; path = Sources/KeychainSerializable.swift; sourceTree = "<group>"; };
+		879603C5E74BBA58A137C8D95D0DCEC9 /* SwiftLint.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftLint.debug.xcconfig; sourceTree = "<group>"; };
+		971EFAC29FD39AA2897F9FC432702014 /* SwiftyKeychainKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyKeychainKit.release.xcconfig; sourceTree = "<group>"; };
+		9A9B0960A09B361687853AEA6EF4D871 /* Pods_Image_storage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Image_storage.framework; path = "Pods-Image storage.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AD89E7D23EC23BBCACE3D0C4D8D45DE /* Pods-Image storage-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Image storage-frameworks.sh"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A0E00467286DF2A669A9F97A7129B8FA /* Pods-Image storage.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Image storage.modulemap"; sourceTree = "<group>"; };
+		A46804F4D27397553874537960BFC5BE /* Pods-Image storageTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Image storageTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B701E27E4BC86416D2392776838F0450 /* SwiftyKeychainKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftyKeychainKit.modulemap; sourceTree = "<group>"; };
+		BA7E5114195CEFFBB5FB64F66DBC9F9F /* Pods-Image storage-Image storageUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Image storage-Image storageUITests-dummy.m"; sourceTree = "<group>"; };
+		BBD8461785E0E6F9CDE589AE18B7C620 /* Pods-Image storage-Image storageUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Image storage-Image storageUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C552CE87592FEF289D7AD8D2856A3DBA /* SwiftyKeychainKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyKeychainKit-dummy.m"; sourceTree = "<group>"; };
+		C8B19DA3976769C61F8553154052AEBB /* Pods-Image storage-Image storageUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Image storage-Image storageUITests.release.xcconfig"; sourceTree = "<group>"; };
+		CEC5E082062C475DA6F1A17A938A7B4B /* Pods-Image storageTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Image storageTests-dummy.m"; sourceTree = "<group>"; };
+		D02A9E2B90B4D49D65C78DB0BBA6857C /* Pods-Image storage-Image storageUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Image storage-Image storageUITests.modulemap"; sourceTree = "<group>"; };
+		D8F8A12F71A9F3343010ACEF2DA22587 /* Pods-Image storageTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Image storageTests.modulemap"; sourceTree = "<group>"; };
+		DAC675F5893B84D2D3D19C787B7C8E5F /* Pods-Image storage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Image storage.debug.xcconfig"; sourceTree = "<group>"; };
+		DEE95DF653805065149CBE64E509735C /* Pods-Image storage-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Image storage-umbrella.h"; sourceTree = "<group>"; };
+		E6EB529AB769A5821C9CEC717C3B9DD7 /* Pods-Image storage-Image storageUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Image storage-Image storageUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		FE01134EAE0AA0607F616A00F05ED09D /* Pods-Image storage-Image storageUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Image storage-Image storageUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		FFF1573C989C5B3A7775A149B23AA47B /* Pods-Image storage-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Image storage-dummy.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		230D1AB79BD37B8CF8C9D7DD59641D8A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3305A86E82AF87C67EE31A218D85E83 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		422C74FBD6D7F5A7CDA7627C625C3EF1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E96B8C2DC5A508E4768961C710C020E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77D3E8F22A832ADB026F4446C7B0BDE3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				099EB7983E9525BF1B0F6BF0090E918B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDC63021B834E0A7EBCAC700EFCA4C6B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				760E63688ACF275033EBF5B956341A79 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0081CFD0D9DEA6226A55C173F2B1A3B8 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				879603C5E74BBA58A137C8D95D0DCEC9 /* SwiftLint.debug.xcconfig */,
+				3D43DAC948A0F2C7578D8CFE55D75CD8 /* SwiftLint.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftLint";
+			sourceTree = "<group>";
+		};
+		335C81BA98B374D2A5C84F6EAE3FB77E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9A9B0960A09B361687853AEA6EF4D871 /* Pods_Image_storage.framework */,
+				39270D69B74B7C044931951815F734FE /* Pods_Image_storage_Image_storageUITests.framework */,
+				5E6561BBFF76AFD3E0B9CAE568EBA579 /* Pods_Image_storageTests.framework */,
+				258C70C973F31097468E616D018311FC /* SwiftyKeychainKit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		468ABF285648AF8948DBCE5CD240C29F /* SwiftyKeychainKit */ = {
+			isa = PBXGroup;
+			children = (
+				24C4F9258B922802E1F16A76FFD51F69 /* Keychain.swift */,
+				391F147CCD2C2602DA28CDB2DD78C778 /* KeychainBridge.swift */,
+				3065FC88E08779CA1FCC0EDA925E10E9 /* KeychainError.swift */,
+				847223E6C8F8E84D912B1CFC3912F5BD /* KeychainSerializable.swift */,
+				F7DCB7A4520A0182F26558A9E4E5B0BB /* Support Files */,
+			);
+			name = SwiftyKeychainKit;
+			path = SwiftyKeychainKit;
+			sourceTree = "<group>";
+		};
+		5653000D490AC9D46AFA09EC431B0A11 /* SwiftLint */ = {
+			isa = PBXGroup;
+			children = (
+				0081CFD0D9DEA6226A55C173F2B1A3B8 /* Support Files */,
+			);
+			name = SwiftLint;
+			path = SwiftLint;
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		63209C336A8A9DC0CF18E4D45824FBC6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5653000D490AC9D46AFA09EC431B0A11 /* SwiftLint */,
+				468ABF285648AF8948DBCE5CD240C29F /* SwiftyKeychainKit */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		67D1D5B8EFACBEC520C7E97327B3C5A5 /* Pods-Image storageTests */ = {
+			isa = PBXGroup;
+			children = (
+				D8F8A12F71A9F3343010ACEF2DA22587 /* Pods-Image storageTests.modulemap */,
+				7F279C5128713DB305CB034A44D65480 /* Pods-Image storageTests-acknowledgements.markdown */,
+				220C27A7A1E2D8329B4DA5973B371A37 /* Pods-Image storageTests-acknowledgements.plist */,
+				CEC5E082062C475DA6F1A17A938A7B4B /* Pods-Image storageTests-dummy.m */,
+				3A3834F76369827FFE6153E1A5443358 /* Pods-Image storageTests-Info.plist */,
+				0C086C8F145FF3B176761DF84832E3D2 /* Pods-Image storageTests-umbrella.h */,
+				A46804F4D27397553874537960BFC5BE /* Pods-Image storageTests.debug.xcconfig */,
+				45D3AAF9EC5F616C69C495C67ABC3F53 /* Pods-Image storageTests.release.xcconfig */,
+			);
+			name = "Pods-Image storageTests";
+			path = "Target Support Files/Pods-Image storageTests";
+			sourceTree = "<group>";
+		};
+		AB161601DDD4B4A9371A1333992156E4 /* Pods-Image storage */ = {
+			isa = PBXGroup;
+			children = (
+				A0E00467286DF2A669A9F97A7129B8FA /* Pods-Image storage.modulemap */,
+				7C493125DDB684F15C8599D39B9A83E7 /* Pods-Image storage-acknowledgements.markdown */,
+				3504FAD165E53B54C7ACBFFFDFCF19E2 /* Pods-Image storage-acknowledgements.plist */,
+				FFF1573C989C5B3A7775A149B23AA47B /* Pods-Image storage-dummy.m */,
+				9AD89E7D23EC23BBCACE3D0C4D8D45DE /* Pods-Image storage-frameworks.sh */,
+				1C413A4DD3E84D05EC7E389B7A6BCE44 /* Pods-Image storage-Info.plist */,
+				DEE95DF653805065149CBE64E509735C /* Pods-Image storage-umbrella.h */,
+				DAC675F5893B84D2D3D19C787B7C8E5F /* Pods-Image storage.debug.xcconfig */,
+				6571742FDF49427500FB64B023A954FD /* Pods-Image storage.release.xcconfig */,
+			);
+			name = "Pods-Image storage";
+			path = "Target Support Files/Pods-Image storage";
+			sourceTree = "<group>";
+		};
+		B1F50CA85E9D3C6D0DA63ABEFD36B1E6 /* Pods-Image storage-Image storageUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D02A9E2B90B4D49D65C78DB0BBA6857C /* Pods-Image storage-Image storageUITests.modulemap */,
+				FE01134EAE0AA0607F616A00F05ED09D /* Pods-Image storage-Image storageUITests-acknowledgements.markdown */,
+				E6EB529AB769A5821C9CEC717C3B9DD7 /* Pods-Image storage-Image storageUITests-acknowledgements.plist */,
+				BA7E5114195CEFFBB5FB64F66DBC9F9F /* Pods-Image storage-Image storageUITests-dummy.m */,
+				0859D659507F51E0F15ACC50A79A538B /* Pods-Image storage-Image storageUITests-frameworks.sh */,
+				0B71424F75BA93CF407D54D863C84151 /* Pods-Image storage-Image storageUITests-Info.plist */,
+				014584B49A4B64BB8EE005BE52081C2A /* Pods-Image storage-Image storageUITests-umbrella.h */,
+				BBD8461785E0E6F9CDE589AE18B7C620 /* Pods-Image storage-Image storageUITests.debug.xcconfig */,
+				C8B19DA3976769C61F8553154052AEBB /* Pods-Image storage-Image storageUITests.release.xcconfig */,
+			);
+			name = "Pods-Image storage-Image storageUITests";
+			path = "Target Support Files/Pods-Image storage-Image storageUITests";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				63209C336A8A9DC0CF18E4D45824FBC6 /* Pods */,
+				335C81BA98B374D2A5C84F6EAE3FB77E /* Products */,
+				FD4910C82A00F879DB2306CC6A4A625C /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F7DCB7A4520A0182F26558A9E4E5B0BB /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B701E27E4BC86416D2392776838F0450 /* SwiftyKeychainKit.modulemap */,
+				C552CE87592FEF289D7AD8D2856A3DBA /* SwiftyKeychainKit-dummy.m */,
+				597FC713347C17BE5AE099A867A8486C /* SwiftyKeychainKit-Info.plist */,
+				28DF595E677F68B5D8FBB30574776D41 /* SwiftyKeychainKit-prefix.pch */,
+				6308416DA0A2DCF7A2AA6597429278A0 /* SwiftyKeychainKit-umbrella.h */,
+				553DD37B101959E982D9C8873D444F87 /* SwiftyKeychainKit.debug.xcconfig */,
+				971EFAC29FD39AA2897F9FC432702014 /* SwiftyKeychainKit.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftyKeychainKit";
+			sourceTree = "<group>";
+		};
+		FD4910C82A00F879DB2306CC6A4A625C /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				AB161601DDD4B4A9371A1333992156E4 /* Pods-Image storage */,
+				B1F50CA85E9D3C6D0DA63ABEFD36B1E6 /* Pods-Image storage-Image storageUITests */,
+				67D1D5B8EFACBEC520C7E97327B3C5A5 /* Pods-Image storageTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		81E15B888DC92C965CCA5F8101F187DD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57C3E50B877140CBACDE6C8DE6A0A35F /* Pods-Image storage-Image storageUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEC313AEB71AF3A25A438C27C584A804 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15343DFC190292C106CE762C4B865C45 /* Pods-Image storageTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C52395695AB6990AEC44B19D3212B47E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33DE157D8C1BA2160BBE6EA95CAA1671 /* Pods-Image storage-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC6E32290BCA4FC4FB42E141503E959E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DB0152ECB4A1A5118447FD28ADF94F8 /* SwiftyKeychainKit-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		6D87DC08013293010684FCDA3DC52813 /* Pods-Image storage-Image storageUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2DE6137A467A3481AA95E20A79D76E6 /* Build configuration list for PBXNativeTarget "Pods-Image storage-Image storageUITests" */;
+			buildPhases = (
+				81E15B888DC92C965CCA5F8101F187DD /* Headers */,
+				0C3E441AFA857D38447DE15E849B2C98 /* Sources */,
+				230D1AB79BD37B8CF8C9D7DD59641D8A /* Frameworks */,
+				A30F4BB75D4411B9D1C2D915E136A6A9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				87771CEEED42ADCAC46987E9D0C1DEFD /* PBXTargetDependency */,
+				F340B1D24832982599E9EAF692112D84 /* PBXTargetDependency */,
+			);
+			name = "Pods-Image storage-Image storageUITests";
+			productName = "Pods-Image storage-Image storageUITests";
+			productReference = 39270D69B74B7C044931951815F734FE /* Pods_Image_storage_Image_storageUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		805938B152BDD72CA7E7202B6FF39B18 /* Pods-Image storage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 340A1A0F4FB399EBD382A913672ABAC3 /* Build configuration list for PBXNativeTarget "Pods-Image storage" */;
+			buildPhases = (
+				C52395695AB6990AEC44B19D3212B47E /* Headers */,
+				9A25290F69293F27AA1FF44FB533C635 /* Sources */,
+				77D3E8F22A832ADB026F4446C7B0BDE3 /* Frameworks */,
+				9FFC1FB68F8710745925BEE9CE3751D2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F1A61E78F1C8EFCEA1AC56D31B4EE8DD /* PBXTargetDependency */,
+				4BB054EDBC4EB64D1D25AE4AB0C34F32 /* PBXTargetDependency */,
+			);
+			name = "Pods-Image storage";
+			productName = "Pods-Image storage";
+			productReference = 9A9B0960A09B361687853AEA6EF4D871 /* Pods_Image_storage.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B9DFE73C3E0DB9CB93C095904997F37A /* SwiftyKeychainKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE918C4A47A550064BFAE65E94D4F938 /* Build configuration list for PBXNativeTarget "SwiftyKeychainKit" */;
+			buildPhases = (
+				EC6E32290BCA4FC4FB42E141503E959E /* Headers */,
+				80CAC48A83ECE4755950C5F7C5F24745 /* Sources */,
+				422C74FBD6D7F5A7CDA7627C625C3EF1 /* Frameworks */,
+				9B9DBA54C0CC0CA75CCBE6E31D554495 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftyKeychainKit;
+			productName = SwiftyKeychainKit;
+			productReference = 258C70C973F31097468E616D018311FC /* SwiftyKeychainKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CD0101280E18029B93B8A123C1AF75CC /* Pods-Image storageTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D1E9A60B90178856413C26763203C476 /* Build configuration list for PBXNativeTarget "Pods-Image storageTests" */;
+			buildPhases = (
+				BEC313AEB71AF3A25A438C27C584A804 /* Headers */,
+				0E3E2181ADFC879988DA0345EA70E2C8 /* Sources */,
+				EDC63021B834E0A7EBCAC700EFCA4C6B /* Frameworks */,
+				710140E1ECF2E96CF26BDE133B02EDF9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0C08706747764FDD12625C5D47501032 /* PBXTargetDependency */,
+			);
+			name = "Pods-Image storageTests";
+			productName = "Pods-Image storageTests";
+			productReference = 5E6561BBFF76AFD3E0B9CAE568EBA579 /* Pods_Image_storageTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 335C81BA98B374D2A5C84F6EAE3FB77E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				805938B152BDD72CA7E7202B6FF39B18 /* Pods-Image storage */,
+				6D87DC08013293010684FCDA3DC52813 /* Pods-Image storage-Image storageUITests */,
+				CD0101280E18029B93B8A123C1AF75CC /* Pods-Image storageTests */,
+				52B60EC2A583F24ACBB69C113F5488B9 /* SwiftLint */,
+				B9DFE73C3E0DB9CB93C095904997F37A /* SwiftyKeychainKit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		710140E1ECF2E96CF26BDE133B02EDF9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B9DBA54C0CC0CA75CCBE6E31D554495 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FFC1FB68F8710745925BEE9CE3751D2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A30F4BB75D4411B9D1C2D915E136A6A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0C3E441AFA857D38447DE15E849B2C98 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F038D999AF7D212C9FDFE0776EA7963A /* Pods-Image storage-Image storageUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0E3E2181ADFC879988DA0345EA70E2C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C33F545955D62A36FEBD9C4A483E5A9 /* Pods-Image storageTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80CAC48A83ECE4755950C5F7C5F24745 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C9781FADD0F91097C0A960154D6A3DE /* Keychain.swift in Sources */,
+				2A2C53BDFF3F837D6DFE0A82B54DCF91 /* KeychainBridge.swift in Sources */,
+				A07E6355AE8099D68FCCE096B35F0EDC /* KeychainError.swift in Sources */,
+				46C9AB24402971DE70056A5EAA804EB5 /* KeychainSerializable.swift in Sources */,
+				6131220A3B53DCAD2012003F06ABDD71 /* SwiftyKeychainKit-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A25290F69293F27AA1FF44FB533C635 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBA133F7126C3101C63A72B36F4B1E40 /* Pods-Image storage-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0C08706747764FDD12625C5D47501032 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Image storage";
+			target = 805938B152BDD72CA7E7202B6FF39B18 /* Pods-Image storage */;
+			targetProxy = C2BCBAB57058E2089C6F3979D186312A /* PBXContainerItemProxy */;
+		};
+		4BB054EDBC4EB64D1D25AE4AB0C34F32 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftyKeychainKit;
+			target = B9DFE73C3E0DB9CB93C095904997F37A /* SwiftyKeychainKit */;
+			targetProxy = F702FA746DD0B5AC4AC7EC5219C9D6CC /* PBXContainerItemProxy */;
+		};
+		87771CEEED42ADCAC46987E9D0C1DEFD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftLint;
+			target = 52B60EC2A583F24ACBB69C113F5488B9 /* SwiftLint */;
+			targetProxy = EDBFCD756BE51E7BC3A5702E9C6BFECE /* PBXContainerItemProxy */;
+		};
+		F1A61E78F1C8EFCEA1AC56D31B4EE8DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftLint;
+			target = 52B60EC2A583F24ACBB69C113F5488B9 /* SwiftLint */;
+			targetProxy = 938C4EE99A2508213F0415FFFFB02FB9 /* PBXContainerItemProxy */;
+		};
+		F340B1D24832982599E9EAF692112D84 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftyKeychainKit;
+			target = B9DFE73C3E0DB9CB93C095904997F37A /* SwiftyKeychainKit */;
+			targetProxy = 291F8C081B64F32F15CED08931B8D0AC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		23285D41C0374C610792B1B86CC9C988 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A46804F4D27397553874537960BFC5BE /* Pods-Image storageTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Image storageTests/Pods-Image storageTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Image storageTests/Pods-Image storageTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2D79BDDEC97622195851F8807A89C778 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8B19DA3976769C61F8553154052AEBB /* Pods-Image storage-Image storageUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Image storage-Image storageUITests/Pods-Image storage-Image storageUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Image storage-Image storageUITests/Pods-Image storage-Image storageUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4BC7450F9457737EE3E637BA155B56F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		854C1B34D61976ABC70CA48C62A46B43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6571742FDF49427500FB64B023A954FD /* Pods-Image storage.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Image storage/Pods-Image storage-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Image storage/Pods-Image storage.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8A295703AAC6A65D489E6D3F5C1728A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45D3AAF9EC5F616C69C495C67ABC3F53 /* Pods-Image storageTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Image storageTests/Pods-Image storageTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Image storageTests/Pods-Image storageTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8B5A46FF8D3C1289CDEE3BAFACABCD2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		8E95CED625F792F8229E2C1A25341548 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 971EFAC29FD39AA2897F9FC432702014 /* SwiftyKeychainKit.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyKeychainKit/SwiftyKeychainKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyKeychainKit/SwiftyKeychainKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwiftyKeychainKit/SwiftyKeychainKit.modulemap";
+				PRODUCT_MODULE_NAME = SwiftyKeychainKit;
+				PRODUCT_NAME = SwiftyKeychainKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		99234454419863A2B5FCBFC3320954A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DAC675F5893B84D2D3D19C787B7C8E5F /* Pods-Image storage.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Image storage/Pods-Image storage-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Image storage/Pods-Image storage.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AD81E62ACCB0B7A923FC8AA288F9921E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D43DAC948A0F2C7578D8CFE55D75CD8 /* SwiftLint.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B286BE3975648B59D7950BC25742E4E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 553DD37B101959E982D9C8873D444F87 /* SwiftyKeychainKit.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyKeychainKit/SwiftyKeychainKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyKeychainKit/SwiftyKeychainKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwiftyKeychainKit/SwiftyKeychainKit.modulemap";
+				PRODUCT_MODULE_NAME = SwiftyKeychainKit;
+				PRODUCT_NAME = SwiftyKeychainKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DE181073279005B1515DAEBE5C46E0A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BBD8461785E0E6F9CDE589AE18B7C620 /* Pods-Image storage-Image storageUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Image storage-Image storageUITests/Pods-Image storage-Image storageUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Image storage-Image storageUITests/Pods-Image storage-Image storageUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EADD1F50ABC8096A0D6CB18822BB4EE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 879603C5E74BBA58A137C8D95D0DCEC9 /* SwiftLint.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		340A1A0F4FB399EBD382A913672ABAC3 /* Build configuration list for PBXNativeTarget "Pods-Image storage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99234454419863A2B5FCBFC3320954A9 /* Debug */,
+				854C1B34D61976ABC70CA48C62A46B43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BC7450F9457737EE3E637BA155B56F7 /* Debug */,
+				8B5A46FF8D3C1289CDEE3BAFACABCD2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE7B4FB01588B9E6DF09CB79FC7CE7BD /* Build configuration list for PBXAggregateTarget "SwiftLint" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EADD1F50ABC8096A0D6CB18822BB4EE4 /* Debug */,
+				AD81E62ACCB0B7A923FC8AA288F9921E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE918C4A47A550064BFAE65E94D4F938 /* Build configuration list for PBXNativeTarget "SwiftyKeychainKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B286BE3975648B59D7950BC25742E4E6 /* Debug */,
+				8E95CED625F792F8229E2C1A25341548 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D1E9A60B90178856413C26763203C476 /* Build configuration list for PBXNativeTarget "Pods-Image storageTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23285D41C0374C610792B1B86CC9C988 /* Debug */,
+				8A295703AAC6A65D489E6D3F5C1728A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2DE6137A467A3481AA95E20A79D76E6 /* Build configuration list for PBXNativeTarget "Pods-Image storage-Image storageUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE181073279005B1515DAEBE5C46E0A0 /* Debug */,
+				2D79BDDEC97622195851F8807A89C778 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

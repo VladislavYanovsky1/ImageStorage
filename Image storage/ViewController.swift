@@ -17,11 +17,9 @@ class ViewController: UIViewController {
         
         
         registerForKeyboardNotifications()
-//        textField.delegate = self 
         
         initialBottomConstraintConstant = bottomViewConstraint.constant
         
-        //hjjjbhbhkbkbkb
         
        
     }

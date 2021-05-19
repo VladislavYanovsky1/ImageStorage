@@ -1,9 +1,3 @@
-//
-//  PlusCollectionViewCell.swift
-//  Image storage
-//
-//  Created by Vladislav on 02.04.2021.
-//
 
 import UIKit
 
