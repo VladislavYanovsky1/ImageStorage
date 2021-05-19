@@ -7,13 +7,11 @@ class CustomImage: Codable {
     var imageURL: String
     var comment: String? = nil
     var isLiked: Bool =  false
-    private var isFake: Bool // не меняем эти значения из других мест
+    private var isFake: Bool 
     private var privateImage: UIImage = UIImage()
     
     let key: String
-    ///Инициализируем объект с картинкой
-    ///Остальные проперти - опциональны и при добавлении картинки равны ничему.
-    /// инит опциональный для того, чтобы вернулся нил, если что-то пойдёт не так
+  
     init?(for image: UIImage, isFake: Bool = false ) {
         self.key =  UUID().uuidString
         let fileName = key + ".jpg"
@@ -21,11 +19,10 @@ class CustomImage: Codable {
         self.privateImage = image
     
         
-        ///если я правильно понимаю, что imageURL == fileName а не путь к файлу
+     
         self.imageURL = fileName
         
-    
-        ///Сохранить картинку ЮзерДефолтс
+
         if !isFake{
            guard let _ = saveImageLocally(image: image, with: fileName) else { fatalError("Что-то не так с сохранением") }}
         
@@ -40,7 +37,6 @@ class CustomImage: Codable {
            case key
        }
     
-    //достает из Json
     required init(from decoder: Decoder) throws {
             let container = try decoder.container(keyedBy: CodingKeys.self)
             
@@ -53,7 +49,7 @@ class CustomImage: Codable {
             
         }
 
-    // кодирует
+
     func encode(to encoder: Encoder) throws {
         var container = encoder.container(keyedBy: CodingKeys.self)
         
@@ -67,8 +63,7 @@ class CustomImage: Codable {
         print("Удаляю объект для ключа", self.key)
         UserDefaults.standard.removeObject(forKey: self.key)
     }
-    
-    /// загрузить изо по имени из локального хранилища
+
     func image() -> UIImage? {
         if isFake {
             return self.privateImage
@@ -90,7 +85,6 @@ class CustomImage: Codable {
 
 private extension CustomImage {
     
-    /// Сохранить изо локально
     func saveImageLocally(image: UIImage, with name: String) -> Bool? {
         guard !isFake else {
             return false
@@ -101,7 +95,6 @@ private extension CustomImage {
         let fileURL = documentsDirectory.appendingPathComponent(name)
         guard let data = image.jpegData(compressionQuality: 1) else { return false}
         
-        //Checks if file exists, removes it if so.
         if FileManager.default.fileExists(atPath: fileURL.path) {
             do {
                 try FileManager.default.removeItem(atPath: fileURL.path)
@@ -124,12 +117,9 @@ private extension CustomImage {
     }
     
     
-    //
-    /// Сохранить себя в ЮзерДефаултс
-    /// Ключ: свой ЮЮАйДи
+
     func saveToUserDefaults () {
         do {
-            /// Получить только имя файла - это будет ключ для хранения в юзерДефолтс
             let key = self.imageURL.components(separatedBy: ".").first!
             try UserDefaults.standard.setObject(self, forKey: key)
             print("Saved to UserDefaults for key: \(key)")

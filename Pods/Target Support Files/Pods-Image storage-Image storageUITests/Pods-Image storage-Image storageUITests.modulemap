@@ -1,0 +1,6 @@
+framework module Pods_Image_storage_Image_storageUITests {
+  umbrella header "Pods-Image storage-Image storageUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
