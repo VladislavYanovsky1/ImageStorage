@@ -6,8 +6,6 @@ protocol ObjectSavable {
     func getObject<T: Codable>(forKey: String, castTo type: T.Type) throws -> T
 }
 
-
-
 extension UserDefaults: ObjectSavable {
     func setObject<T: Codable>(_ object: T, forKey: String) throws   {
         let encoder = JSONEncoder()
@@ -18,8 +16,7 @@ extension UserDefaults: ObjectSavable {
             throw ObjectSavableError.unableToEncode
         }
     }
-    
-    
+        
     func getObject <T: Codable> (forKey: String, castTo type: T.Type) throws -> T {
         guard let data = data(forKey: forKey) else { throw ObjectSavableError.noValue }
         let decoder = JSONDecoder()
@@ -31,7 +28,6 @@ extension UserDefaults: ObjectSavable {
         }
     }
 }
-
 
 enum ObjectSavableError: String, LocalizedError {
     case unableToEncode = "Unable to encode object into data"

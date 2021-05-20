@@ -2,22 +2,21 @@
 import Foundation
 import UIKit
 
-var fakeImagesList: [CustomImage?] = [
+var fakeImagesList: [CustomImage] = [
     CustomImage(for: UIImage(named: "1") ?? UIImage(),isFake: true),
     CustomImage(for: UIImage(named: "2") ?? UIImage(),isFake: true),
     CustomImage(for: UIImage(named: "3") ?? UIImage(),isFake: true)
 
 ].compactMap({ $0 }) 
 
-
 class CustomImageModel {
     
-    var imagesList: [CustomImage?] = []
+    var imagesList: [CustomImage] = []
     let isLoggedUser: Bool
     
     init(isLoggedUser: Bool) {
         self.isLoggedUser = isLoggedUser
-        
+    
         if isLoggedUser == false {
             self.imagesList = fakeImagesList
         }  else {
@@ -25,13 +24,9 @@ class CustomImageModel {
         }
     }
     
-    
-
     func getFiles() -> [String]? {
-        
         let documentsUrl =  FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
         do {
-         
             let directoryContents = try FileManager.default.contentsOfDirectory(at: documentsUrl, includingPropertiesForKeys: nil)
             let imageFiles = directoryContents.filter{ $0.pathExtension == "jpg" }
             let imageFilesNames = imageFiles.map{ $0.deletingPathExtension().lastPathComponent }
@@ -43,7 +38,7 @@ class CustomImageModel {
     }
     
     func removeItemAtIndex(index: Int) {
-        imagesList[index]?.removeFromUserDefaults()
+        imagesList[index].removeFromUserDefaults()
         imagesList.remove(at: index)
     }
     

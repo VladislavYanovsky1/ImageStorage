@@ -15,17 +15,13 @@ class SelectedPhotoViewController: UIViewController {
         super.viewDidLoad()
         
         if selectedImageIndex ?? -1 >= 0 {
-            guard let model = model, let index = selectedImageIndex, let imageObject = model.imagesList[index] else { return }
+            guard let model = model, let index = selectedImageIndex else { return }
+            let imageObject = model.imagesList[index] 
             selectedImageView.image =  imageObject.image()
             selectedImageView.contentMode = .scaleAspectFill
         } else {
             return
         }
-        
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(true)
     }
     
     @IBAction func backButtonTapped(_ sender: Any) {

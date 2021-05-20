@@ -6,30 +6,23 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var bottomViewConstraint: NSLayoutConstraint!
     @IBOutlet weak var textField: UITextField!
-    
-    
+
     var initialBottomConstraintConstant: CGFloat = 0
     
     @IBOutlet weak var scrollview: UIScrollView!
     @IBOutlet weak var imageview: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
+  
         registerForKeyboardNotifications()
-        
         initialBottomConstraintConstant = bottomViewConstraint.constant
-        
-        
        
     }
-    
     
     private func registerForKeyboardNotifications() {
           NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(_:)), name: UIResponder.keyboardWillShowNotification, object: nil)
           NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(_:)), name: UIResponder.keyboardWillHideNotification, object: nil)
       }
-    
     
        @objc private func keyboardWillShow(_ notification: NSNotification) {
            guard let userInfo = notification.userInfo,
@@ -50,9 +43,6 @@ class ViewController: UIViewController {
        }
        
    }
-
-
-    
 
 extension ViewController: UITextFieldDelegate {
     

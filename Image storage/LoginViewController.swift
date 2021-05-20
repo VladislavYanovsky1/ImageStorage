@@ -8,24 +8,20 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var login: UIButton!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var backgroundImageView: UIImageView!
- 
     
     let keychain = Keychain(service: "passwordStorage")
     let accessTokenKey = KeychainKey<String>(key: "accsesToken")
-
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.navigationController?.isNavigationBarHidden = true
         
-        
         do {
             try keychain.set("1", for: accessTokenKey)
         } catch let error {
             debugPrint(error)
         }
-        
     }
     
 

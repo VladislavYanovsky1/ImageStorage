@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -142,7 +142,6 @@
 				AA3ED2BE773111EC75532454 /* Pods-Image storageTests.debug.xcconfig */,
 				66E06E9B57D5D01F153C6FBB /* Pods-Image storageTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -177,9 +176,9 @@
 				8663418425C307A30026FB86 /* Main.storyboard */,
 				865AD14A261B1CDC004BBFA6 /* LoginViewController.swift */,
 				866341B125C307D80026FB86 /* FirstViewController.swift */,
+				0F0E7F2B25DD563300CADDAB /* model */,
 				8667BBB52619F6C100F513BE /* SelectedPhotoViewController.swift */,
 				0F0E7F2725DD562500CADDAB /* cell */,
-				0F0E7F2B25DD563300CADDAB /* model */,
 				8663418725C307A30026FB86 /* Assets.xcassets */,
 				8663418925C307A30026FB86 /* LaunchScreen.storyboard */,
 				8663418C25C307A30026FB86 /* Info.plist */,

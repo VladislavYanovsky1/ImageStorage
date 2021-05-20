@@ -9,17 +9,12 @@ class FirstViewController: UIViewController {
     //MARK: IBOutlets
     
     @IBOutlet weak var imageCollection: UICollectionView!
-    
 
     //MARK: Variables
     
     var model: CustomImageModel?
     var currentSelectedImageIndex = -1
-   
-   
     
-    
-
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -35,10 +30,7 @@ class FirstViewController: UIViewController {
 
         imageCollection.reloadData()
     }
-    
-    
-    
-    
+
     //MARK: IBActions
 
     @IBAction func addImageButtonPressed(_ sender: UIButton) {
@@ -69,7 +61,6 @@ extension FirstViewController: UIImagePickerControllerDelegate, UINavigationCont
                 guard let object = CustomImage(for: pickedImage) else { fatalError("There is something wrong with the picture") }
                 model.imagesList.append(object)
                 print("model.imagesList: \(model.imagesList.count)")
-                
                 let indexPath = IndexPath(row: model.imagesList.count, section: 0)
                 print("try 2 reload \(indexPath), ")
                 self.imageCollection.reloadData()
@@ -83,7 +74,7 @@ extension FirstViewController: UICollectionViewDelegate, UICollectionViewDataSou
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         guard let model = model else { fatalError("Model is absent") }
         print(#function, model.imagesList.count)
-        model.imagesList.map({print($0?.key)})
+        model.imagesList.forEach({print($0.key)})
         return model.imagesList.count + 1
     }
     
@@ -94,7 +85,6 @@ extension FirstViewController: UICollectionViewDelegate, UICollectionViewDataSou
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             let selectedPhotoViewController = storyboard.instantiateViewController(identifier: String(describing: SelectedPhotoViewController.self)) as SelectedPhotoViewController
             selectedPhotoViewController.modalPresentationStyle = .fullScreen
-            
             selectedPhotoViewController.selectedImageIndex = indexPath.row - 1
             selectedPhotoViewController.model = self.model
             currentSelectedImageIndex = indexPath.row - 1
@@ -112,11 +102,10 @@ extension FirstViewController: UICollectionViewDelegate, UICollectionViewDataSou
             guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier:  PlusCollectionViewCell.cellIdentifier, for: indexPath) as? PlusCollectionViewCell  else { return UICollectionViewCell() }
             return cell
         } else {
-            // Создать ячейку
+
             guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier:  CustomCollectionViewCell.cellIdentifier, for: indexPath) as? CustomCollectionViewCell else { return UICollectionViewCell() }
-            print("cell for picture", model.imagesList[indexPath.row - 1]?.key)
-           
-            cell.configure(with: CustomCollectionViewCellObject(object: model.imagesList[indexPath.row - 1]!, delegate: self))
+
+            cell.configure(with: CustomCollectionViewCellObject(object: model.imagesList[indexPath.row - 1], delegate: self))
             cell.image.contentMode = .scaleAspectFill
             return cell
         }
@@ -125,7 +114,6 @@ extension FirstViewController: UICollectionViewDelegate, UICollectionViewDataSou
 
 
 extension FirstViewController: UICollectionViewDelegateFlowLayout {
-    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let width = (view.frame.width - 10) / 2
         print("width: \(width)")
@@ -149,7 +137,6 @@ extension UICollectionViewCell {
 extension UICollectionView {
     func register<T: UICollectionViewCell>(cellType: T.Type){
         let nib = UINib(nibName: cellType.cellIdentifier, bundle: nil)
- 
         register(nib, forCellWithReuseIdentifier: cellType.cellIdentifier)
     }
 }

@@ -17,19 +17,13 @@ class CustomImage: Codable {
         let fileName = key + ".jpg"
         self.isFake = isFake
         self.privateImage = image
-    
-        
-     
         self.imageURL = fileName
-        
 
         if !isFake{
            guard let _ = saveImageLocally(image: image, with: fileName) else { fatalError("Что-то не так с сохранением") }}
         
     }
-    
 
-    
     private enum CodingKeys: String, CodingKey {
            case imageURL
            case comment
@@ -46,13 +40,12 @@ class CustomImage: Codable {
             key = try container.decode(String.self, forKey: .key)
             privateImage = UIImage()
             isFake = false
-            
         }
 
 
     func encode(to encoder: Encoder) throws {
         var container = encoder.container(keyedBy: CodingKeys.self)
-        
+
         try container.encode(self.imageURL, forKey: .imageURL)
         try container.encode(self.comment, forKey: .comment)
         try container.encode(self.isLiked, forKey: .isLiked)
@@ -68,6 +61,7 @@ class CustomImage: Codable {
         if isFake {
             return self.privateImage
         }
+        
         let documentDirectory = FileManager.SearchPathDirectory.documentDirectory
         
         let userDomainMask = FileManager.SearchPathDomainMask.userDomainMask
@@ -77,7 +71,6 @@ class CustomImage: Codable {
             let imageUrl = URL(fileURLWithPath: dirPath).appendingPathComponent(self.imageURL)
             let image = UIImage(contentsOfFile: imageUrl.path)
             return image
-            
         }
         return nil
     }
@@ -90,7 +83,6 @@ private extension CustomImage {
             return false
         }
         guard let documentsDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first else { return false}
-        
         
         let fileURL = documentsDirectory.appendingPathComponent(name)
         guard let data = image.jpegData(compressionQuality: 1) else { return false}
@@ -115,8 +107,6 @@ private extension CustomImage {
             return nil
         }
     }
-    
-    
 
     func saveToUserDefaults () {
         do {
